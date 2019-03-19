@@ -14,8 +14,8 @@ Dataset Size is 1.13 GB. The dataset mainly has 3 files: movies.dat (it has movi
  3)  tentative plan for analysis on GCP
 
  i)  EDA and Preprocessing : Data has been already pre processed. We can directly work on it and implement the recommendation algorithm.
- ii)  Dashboard for User group, Dashboard for Data Engineers :
+ ii)  Dashboard for User group, Dashboard for Data Engineers : We will plan to represent graphically the genres which are most recommended to a particular user. Also dashboards for the user to watch a movie if has likes the movie of same genre.
  iii)  GCP further processing - ML : We will use ALS(Alternative Least Square) algorithm which is Collaborative filtering algorithm built in Apache MLlib.
  iv)  Evaluation of results :  We will be evaluating our result by RMSE(Root Mean Square Error). The smaller the value is the accurate result will be. In ALS , we have different features as well , we will try to implement and tune the algorithm to get the least RMSE. 
  v)  Steps for production model : We will load our data in Predictive model which is based on ALS. Later on We will train our model with partial data and check RMSE . After training , we will be testing our model and prepare the model for Production data.
- vi)  Final Dashboard for User Group
+ vi)  Final Dashboard for User Group: Finally, users will view the what movies have been most recommended. This will be based on the movie and user matrix that will help to recommend movies to users based on the ratings given by users.
