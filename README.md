@@ -11,17 +11,11 @@ We have used a dataset released by grouplens from MovieLens website. The dataset
 Dataset Size is 1.13 GB. The dataset mainly has 3 files: movies.dat (it has movie id, title of the movie and genre.), ratings.dat (it contains user id, movie id, rating of the movie by user and timestamp) and personalized_rating.txt (it conains ratings by a particular user for whom we want to recommend movies). Dataset represents users and movies with integer ids. In all the files in dataset, data is separated by delimeter '::'. Ratings given by           users are from scale 1 to 5, 5 being the highest rating.
 
       
-      c)  tentative plan for analysis on GCP
+ 3)  tentative plan for analysis on GCP
 
-           1)  EDA and Preprocessing : 
-           
- Dashboard for the users will be created on the basis of the ratings each user has given and and also what genre of movies are recommended to the users. Also dashboards can depict which is the most highly rated genre of movie.
-
-           3)  GCP further processing - ML
-
-           4)  Evaluation of results
-
-           5)  Steps for production model
-
-
-
+ i)  EDA and Preprocessing : Data has been already pre processed. We can directly work on it and implement the recommendation algorithm.
+ ii)  Dashboard for User group, Dashboard for Data Engineers :
+ iii)  GCP further processing - ML : We will use ALS(Alternative Least Square) algorithm which is Collaborative filtering algorithm built in Apache MLlib.
+ iv)  Evaluation of results :  We will be evaluating our result by RMSE(Root Mean Square Error). The smaller the value is the accurate result will be. In ALS , we have different features as well , we will try to implement and tune the algorithm to get the least RMSE. 
+ v)  Steps for production model : We will load our data in Predictive model which is based on ALS. Later on We will train our model with partial data and check RMSE . After training , we will be testing our model and prepare the model for Production data.
+ vi)  Final Dashboard for User Group
