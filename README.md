@@ -15,7 +15,7 @@ Dataset Size is 1.13 GB. The dataset mainly has 3 files: movies.dat (it has movi
 
            1)  EDA and Preprocessing : 
            
-           2)  Dashboard for User group, Dashboard for Data Engineers :
+ Dashboard for the users will be created on the basis of the ratings each user has given and and also what genre of movies are recommended to the users. Also dashboards can depict which is the most highly rated genre of movie.
 
            3)  GCP further processing - ML
 
@@ -23,6 +23,5 @@ Dataset Size is 1.13 GB. The dataset mainly has 3 files: movies.dat (it has movi
 
            5)  Steps for production model
 
-           6)  Final Dashboard for User Group
 
 
