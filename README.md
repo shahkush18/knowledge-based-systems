@@ -1,7 +1,7 @@
 # knowledge-based-systems
 1)  Research question: what is the group trying to learn or question to answer? Who is interested (audience)?
 
-We have developed a movie recommendation engine which would recommend movies to users, based on the ratings provided by other users.       
+We have targeted a movie recommendation engine which would recommend movies to users, based on the ratings provided by other users.       
 Recommendation systems are a very integral part of e-commerce websites as well as other service providers like online streaming (Netflix, Prime Video, etc) and many others.
 Amazon has its own recommendation system which we often tend to use (“People who bought this also bought these items”). Netflix recommends movies based on preferred genres and ratings by users. 
 
@@ -24,4 +24,5 @@ Dataset Size is 1.13 GB. The dataset mainly has 3 files: movies.dat (it has movi
            5)  Steps for production model
 
            6)  Final Dashboard for User Group
+
 
