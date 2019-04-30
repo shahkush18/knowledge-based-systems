@@ -5,6 +5,76 @@ We have targeted a movie recommendation engine which would recommend movies to u
 
 **Recommendation systems** play an integral role for e-commerce websites and service providers like online streaming services (Netflix, Prime Video, etc) and many others. Amazon is perhaps one of the most recognizable companies using  a recommendation engine to generate income daily (*recognize the “People who bought this also bought these items” feature?*). Another popular example is Netflix, which recommends movies based on user's historic preferences and similar users' ratings. 
 
+
+# How MovieMania Works 
+
+## Collaborative Filtering in TensorFlow using WALS
+
+Our system implements a collaborative filtering recommendation model using the WALS
+(weighted alternating least squares) algorithm provided in TensorFlow to apply
+it on the MovieLens dataset.
+
+### Setting up the Environment 
+
+This code assumes python version 2.7.
+
+* Install miniconda2 
+
+https://conda.io/docs/user-guide/install/index.html
+
+
+* Create a new environment and install packages 
+
+Assuming you are in the repo directory, run: 
+
+```
+$ conda create -n tfrec
+$ conda install -n tfrec --file requirements.txt
+```
+
+* Install TensorFlow 
+
+CPU:
+```
+$ pip install tensorflow
+```
+
+Or GPU, if one is available in your environment:
+
+```
+$ pip install tensorflow-gpu
+```
+
+
+### Downloading Movielens Data
+
+```
+$ curl -O 'http://files.grouplens.org/datasets/movielens/ml-100k.zip'
+$ unzip ml-100k.zip
+$ mkdir data
+$ cp ml-100k/u.data data/
+```
+
+### Running the Model 
+
+*   Train the model locally
+```
+$ ./mltrain.sh local data/u.data
+```
+
+*   Train the model on ML Engine:
+```
+$ gsutil cp data/u.data gs://mybucket/data/u.data
+$ ./mltrain.sh train gs://mybucket/data/u.data
+```
+
+*   Hyperparameter tuning on ML Engine:
+```
+$ ./mltrain.sh tune gs://mybucket/data/u.data
+``` 
+
+*** 
+
 ### Research question: Which genre are acclaimed among MovieLens users?
 
 As this is a recommendation system, it is important for entertaintment websites to know what genre are users more inclined towards, this will help the system suggesting movies based on that. Doing this we concluded that comdey is the highly rated genre and that can be initially reccomended to new users of the system, who have currently joined and there is no significant data for that users.
@@ -76,76 +146,7 @@ As the dataset was very structured and clean, minimal preprocessing was needed t
 </p>
 
 ### Internal Dashboards 
-Data Scientist or Data Engineer? Please download the jupyter notebook [here](https://github.com/shahkush18/knowledge-based-systems/blob/master/MovieRatings_EDA.ipynb) to access a more sohisticated dashboard on the dataset. 
-
-# How MovieMania Works 
-
-## Collaborative Filtering in TensorFlow using WALS
-
-This code implements a collaborative filtering recommendation model using the WALS
-(weighted least alternating squares) algorithm provided in TensorFlow, and applies
-it to the MovieLens data set.
-
-## Installation & Setup 
-
-This code assumes python 2.
-
-* Install miniconda2:
-
-https://conda.io/docs/user-guide/install/index.html
-
-
-* Create environment and install packages:
-
-Assuming you are in the repo directory:
-
-```
-$ conda create -n tfrec
-$ conda install -n tfrec --file requirements.txt
-```
-
-* Install TensorFlow.
-
-CPU:
-```
-$ pip install tensorflow
-```
-
-Or GPU, if one is available in your environment:
-
-```
-$ pip install tensorflow-gpu
-```
-
-
-## Download Movielens Data
-
-```
-$ curl -O 'http://files.grouplens.org/datasets/movielens/ml-100k.zip'
-$ unzip ml-100k.zip
-$ mkdir data
-$ cp ml-100k/u.data data/
-```
-
-## Run
-
-*   Train the model locally
-```
-$ ./mltrain.sh local data/u.data
-```
-
-*   Train the model on ML Engine:
-```
-$ gsutil cp data/u.data gs://mybucket/data/u.data
-$ ./mltrain.sh train gs://mybucket/data/u.data
-
-```
-
-*   Hyperparameter tuning on ML Engine:
-```
-$ ./mltrain.sh tune gs://mybucket/data/u.data
-
-```
+Data Scientist or Data Engineer? Please download the jupyter notebook [here](https://github.com/shahkush18/knowledge-based-systems/blob/master/MovieRatings_EDA.ipynb) to access a more sophisticated dashboard on the dataset. 
 
 ### Credits 
 
@@ -153,11 +154,17 @@ We would like to thank the **[GroupLens team](https://grouplens.org/)** for coll
 
 We are very grateful to **Dr. Pamela Thompson** and to the author of ***Data Science on the Google Cloud Platform*** Mr. **Valliappa Lakshmanan** for exposing us to many concepts behind Google Cloud Platform and allowing us to use it to build an effective movie recommendation system. 
 
+### Meet the Team 
+
+Member Name   |   Role   | 
+--- | --- | 
+**Darshan** | Work with Kush to fit a collaborative filtering model using Python and Google Cloud Platform | 
+**Kush Shah** | Research collaborative filtering techniques and work with Darshan to fit a collaborative filtering model using Python and Google Cloud Platform | 
+**Pallav Jhaveri** | Research dataset and work with Anusha to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
+**Anusha Balaji** | Preprocess data and work with Pallav to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
 ***
 
-
 ### Research Citations 
-
 
 * Manoj Kumar, D.K. Yadav, Ankur Singh: **A Movie Recommender System: MOVREC**, In:Internation Journal of Computer Applications,2105
 
