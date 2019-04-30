@@ -55,24 +55,24 @@ As the dataset was very structured and clean, minimal preprocessing was needed t
 ### User Dashboards 
 
 <p align ="center">
-  <img src = "MovieRatings.png" width = "350">
+  <img src = "../MovieRatings.png" width = "350">
 </p>
 <p> 
 <ul><li>The above dashboard elicites the movie names and their average ratings provided by users.</li></ul>
 </p> 
 
 <p align ="center">
-  <img src = "GenreRatings.png" width = "350">
+  <img src = "../GenreRatings.png" width = "350">
 </p>
 <p>
 <ul><li>The above dashboard represents the average rating of each genre in percentage.</li></ul>
 </p>
 
 <p align ="center">
-  <img src = "RatingsCount.PNG" width = "350">
+  <img src = "../RatingsCount.PNG" width = "350">
 </p>
 <p>
-<ul><li>The above dashboard represents the record count of each ratings.</li></ul>
+<ul><li>The above pie chart displays distribution of user ratings in the dataset. As seen above, majority of ratings have values of 4 and 5 stars. Only about 7% of ratings are "poor" (with ratings 1 and 2 starts). </li></ul>
 </p>
 
 ### Internal Dashboards 
@@ -159,17 +159,17 @@ We are very grateful to **Dr. Pamela Thompson** and to the author of ***Data Sci
 ### Research Citations 
 
 
-Manoj Kumar, D.K. Yadav, Ankur Singh: **A Movie Recommender System: MOVREC**, In:Internation Journal of Computer Applications,2105
+* Manoj Kumar, D.K. Yadav, Ankur Singh: **A Movie Recommender System: MOVREC**, In:Internation Journal of Computer Applications,2105
 
 
 MOVREC is a movie recommendation system which recommends movies using Collaborative Filtering. They have used K-means algorithm K-means algorithms and the predictions are based on features such as Genre, Actor, Rating, Year. Ratings has the highest weight among those features.  This system gives top 20 movies based on users profile or search query.
 
 
-Feluce Ferrara, Nirmala Pudota, Carlo Tasso: **A Keyphrase-Based Paper Recommender System**, In: Proceedings of the IRCDL’11, 2011
+* Feluce Ferrara, Nirmala Pudota, Carlo Tasso: **A Keyphrase-Based Paper Recommender System**, In: Proceedings of the IRCDL’11, 2011
 
 With the increasing information in the digital libraries effective access of information is getting difficult, specially, for scientific digital libraries where numerous scientific articles can be explored by users with different needs and perspectives. This paper introduces a content-based recommendation approach for enhancing the access to scientific digital libraries where a key phrase extraction module is used to produce a rich description of both content papers and user interests.
 
 
-Raymond Mooney, Lorine Roy: **Content-Based Book Recommending using Learning for Text Categorization**, In:Proceedings of the SIGIR-99 Workshop on Recommender Systems,August 1999
+* Raymond Mooney, Lorine Roy: **Content-Based Book Recommending using Learning for Text Categorization**, In:Proceedings of the SIGIR-99 Workshop on Recommender Systems,August 1999
 
 Most of the recommendation systems use social filtering methods which filters users based on their preferences. But content-based methods use information about an item itself to make suggestion according to that. This approach has the advantage of being able to recommend previously unrated items to users with unique interests and to provide explanations for its recommendations. This paper introduces a content-based book recommending system that utilizes information extraction and a machine-learning algorithm for text categorization. Initial experimental results demonstrate that this approach can produce accurate recommendations.
