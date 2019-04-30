@@ -1,0 +1,3 @@
+.ipynb_checkpoints/*
+data/ml-latest/genome*.csv
+data/ml-latest/ratings.csv 
