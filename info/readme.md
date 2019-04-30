@@ -156,9 +156,9 @@ We are very grateful to **Dr. Pamela Thompson** and to the author of ***Data Sci
 
 ### Meet the Team 
 
-Member Name   |   Role   | 
+Member Name   |   Roles & Responsibilities   | 
 --- | --- | 
-**Darshan** | Work with Kush to fit a collaborative filtering model using Python and Google Cloud Platform | 
+**Darshan Shah** | Work with Kush to fit a collaborative filtering model using Python and Google Cloud Platform | 
 **Kush Shah** | Research collaborative filtering techniques and work with Darshan to fit a collaborative filtering model using Python and Google Cloud Platform | 
 **Pallav Jhaveri** | Research dataset and work with Anusha to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
 **Anusha Balaji** | Preprocess data and work with Pallav to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
