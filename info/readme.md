@@ -148,6 +148,9 @@ As the dataset was very structured and clean, minimal preprocessing was needed t
 ### Internal Dashboards 
 Data Scientist or Data Engineer? Please download the jupyter notebook [here](https://github.com/shahkush18/knowledge-based-systems/blob/master/MovieRatings_EDA.ipynb) to access a more sophisticated dashboard on the dataset. 
 
+### Output
+A User can enter his client id and get his recommendations. Here is the screenshot of the output. 
+
 ### Credits 
 
 We would like to thank the **[GroupLens team](https://grouplens.org/)** for collecting movie ratings dataset and providing [the dataset](https://grouplens.org/datasets/movielens/) to us for free in carrying out this project. THe dataset has been immensely valuable in helping us build our project. 
