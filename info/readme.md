@@ -151,8 +151,9 @@ Data Scientist or Data Engineer? Please download the jupyter notebook [here](htt
 ### Output
 A User can enter his client id and get his recommendations. Here is the screenshot of the output. 
 <p align ="center">
-  <img src = "../images/image.PNG" width = "350">
+  <img src = "../Output.jpeg" width = "350">
 </p>
+
 
 ### Credits 
 
