@@ -5,6 +5,15 @@ We have targeted a movie recommendation engine which would recommend movies to u
 
 **Recommendation systems** play an integral role for e-commerce websites and service providers like online streaming services (Netflix, Prime Video, etc) and many others. Amazon is perhaps one of the most recognizable companies using  a recommendation engine to generate income daily (*recognize the “People who bought this also bought these items” feature?*). Another popular example is Netflix, which recommends movies based on user's historic preferences and similar users' ratings. 
 
+### Meet the Team 
+
+Member Name   |   Roles & Responsibilities   | 
+--- | --- | 
+**Darshan Shah** | Work with Kush to fit a collaborative filtering model using Python and Google Cloud Platform | 
+**Kush Shah** | Research collaborative filtering techniques and work with Darshan to fit a collaborative filtering model using Python and Google Cloud Platform | 
+**Pallav Jhaveri** | Research dataset and work with Anusha to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
+**Anusha Balaji** | Preprocess data and work with Pallav to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
+***
 
 # How MovieMania Works 
 
@@ -109,7 +118,7 @@ As the dataset was very structured and clean, minimal preprocessing was needed t
   
   ![movies_genre_rows](https://github.com/shahkush18/knowledge-based-systems/blob/master/images/movies_genre_rows.PNG)
 
-### Tentative plan for analysis on GCP 
+### Analysis on GCP 
 
 </br>
 <ol>
@@ -154,6 +163,11 @@ A User can enter his client id and get his recommendations. Here is the screensh
   <img src = "../Output.jpeg" width = "350">
 </p>
 
+### What's next for MovieMania? Future Work 
+* Develop a "real" system which works on real-life users to recommend movies to users. Develop a web/mobile application to make it readily accessible to suers. 
+* Ask for user's feedback as soon as they watch one of the recommended movies and have an option for them to show more or fewer recommendations on the fly. 
+* Incorporate more "intelligent" recommendations based on user's location, language preferences, and social events/trends. For example, research has shown that social and economic hardships result in an increased demand for younger actors and comedy movies (Prettijohn, ***Relationships between U.S. Social and Economic Hard Times and Popular Motion Picture Actor Gender, Actor Age, and Movie Genre Preferences***). 
+
 
 ### Credits 
 
@@ -161,19 +175,14 @@ We would like to thank the **[GroupLens team](https://grouplens.org/)** for coll
 
 We are very grateful to **Dr. Pamela Thompson** and to the author of ***Data Science on the Google Cloud Platform*** Mr. **Valliappa Lakshmanan** for exposing us to many concepts behind Google Cloud Platform and allowing us to use it to build an effective movie recommendation system. 
 
-### Meet the Team 
-
-Member Name   |   Roles & Responsibilities   | 
---- | --- | 
-**Darshan Shah** | Work with Kush to fit a collaborative filtering model using Python and Google Cloud Platform | 
-**Kush Shah** | Research collaborative filtering techniques and work with Darshan to fit a collaborative filtering model using Python and Google Cloud Platform | 
-**Pallav Jhaveri** | Research dataset and work with Anusha to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
-**Anusha Balaji** | Preprocess data and work with Pallav to develop user and data scientist dashboards using Cloud Datalab, research methods and utilities for implementing the recommender system, and project documentation | 
-***
-
 ### Research Citations 
 
-* Manoj Kumar, D.K. Yadav, Ankur Singh: **A Movie Recommender System: MOVREC**, In:Internation Journal of Computer Applications,2105
+* Kiersten Nichols, Pamela Thompson: **Cashing in on Cinema: An Exploratory Data Analysis of Social and Economic Indicators Influencing Movie Choices**, 2018 
+
+
+In her thesis paper, Nichols presents numerous factors that can have significant impacts on a movie's outcome and success based on the what's currently trending in the social and political environment. Tragedies and devastating events like terrorism, wars, and even turbulent economic events like a stock market crash or rising unemployment rates can often dictate movies' success. For example, there is significant scientific evidence that during the 1930s, consumers chose to watch comedies and musicals in order to escape at least temporarily from the Great Depression. Researcher Pettijohn found that when social and economic hardships were present, movie goers preferred younger actors and comedies. 
+
+* Manoj Kumar, D.K. Yadav, Ankur Singh: **A Movie Recommender System: MOVREC**, In:Internation Journal of Computer Applications,2015
 
 
 MOVREC is a movie recommendation system which recommends movies using Collaborative Filtering. They have used K-means algorithm K-means algorithms and the predictions are based on features such as Genre, Actor, Rating, Year. Ratings has the highest weight among those features.  This system gives top 20 movies based on users profile or search query.
